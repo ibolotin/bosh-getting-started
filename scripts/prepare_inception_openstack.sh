@@ -65,7 +65,7 @@ gem install fog --no-ri --no-rdoc
 
 mkdir -p ${bosh_app_dir}/bootstrap
 cd ${bosh_app_dir}/bootstrap
-git clone git://github.com/frodenas/bosh.git
+git clone git://github.com/ibolotin/bosh.git
 cd ${bosh_app_dir}/bootstrap/bosh/cli/
 bundle install --without=development test
 bundle exec rake install
@@ -82,7 +82,7 @@ bundle install --without=development test
 bundle exec rake install
 
 cd ${bosh_app_dir}/releases
-git clone git://github.com/frodenas/bosh-release.git
+git clone git://github.com/ibolotin/bosh-release.git
 cd ${bosh_app_dir}/releases/bosh-release
 git submodule update --init
 
